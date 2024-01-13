@@ -8,5 +8,13 @@
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:enforceNavigationBarContrast">false</item>
         <item name="android:enforceStatusBarContrast">false</item>
+
+    </style>
+
+    <style name="Theme.WeatherApp.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_splash</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.WeatherApp</item>
+
     </style>
 </resources>

@@ -21,6 +21,7 @@ import android.location.LocationListener
 import android.provider.Settings
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.weatherapp.helpers.MyDateTimeFormatter.Companion.formatDateTime
 import com.example.weatherapp.helpers.MyDateTimeFormatter.Companion.formatDateTimeToTime
@@ -34,7 +35,7 @@ import java.time.LocalDate
 
 //todo:
 //loading
-//splashscreen
+//splashscreen :: done
 //corotiens
 //mvvm
 
@@ -55,6 +56,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
+        installSplashScreen()
         setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -66,9 +68,6 @@ class MainActivity : AppCompatActivity() {
 
         sharedPreferences = getSharedPreferences(WEATHER_PREFERENCES, Context.MODE_PRIVATE)
         editor = sharedPreferences.edit()
-//        binding.tvNext.setOnClickListener {
-//            startActivity(Intent(this, SecondActivity::class.java))
-//        }
 
     }
 
