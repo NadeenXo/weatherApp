@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="metric">°</string>
+    <string name="next_msg"><![CDATA[Next 7 days >]]></string>
+    <string name="today_msg">Today</string>
+    <string name="humidity_msg">Humidity</string>
+    <string name="wind_speed_msg">Wind Speed</string>
+    <string name="rain_msg">Rain</string>
+    <string name="mostly_cloudy_msg">Mostly Cloudy</string>
+    <string name="now_msg">Now</string>
+    <string name="feels_like_msg">feels like:</string>
+    <string name="degree_hint">25°</string>
+    <string name="country_hint">Country</string>
+    <string name="min_msg">min: </string>
+    <string name="max_msg">max: </string>
+    <string name="sunrise_msg">"sunrise: "</string>
+    <string name="sunset_msg">"sunset: "</string>
+    <string name="hour_hint">7 am</string>
+    <string name="h_l">H:%1$s%2$s L:%3$s%4$s</string>
+</resources>
